@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --extra-light-gray: #f8f9faff;
+  --background-color: #fcfaff;
+  --soft-light-gray: #f2f2f3;
+  --light-gray: #ced4daff;
+  --primary-gray: #adb5bdff;
+  --soft-dark-gray: #89949e;
+  --dark-gray: #6c757dff;
+  --extra-dark-gray: #343a40ff;
+  --paragraph-color: rgba(0, 0, 0, 0.54);
+  --paragraph-spacing: 0.00938em;
+
+  /* Global */
+  --letter-spacing: 0.08rem;
+  --transition: all 0.2s ease;
+  --btn-transition: all 0.125s ease;
+  --radius: 0.25rem;
+  --img-radius: 0.25rem 0.25rem 0rem 0rem;
+  --card-radius: 0rem 0rem 0.25rem 0.25rem;
+  --btn-radius: 16px;
+  --light-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 4px 5px 15px rgba(5, 6, 6, 0.4);
+}
