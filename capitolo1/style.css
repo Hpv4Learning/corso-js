@@ -17,6 +17,7 @@
   --soft-dark-gray: #89949e;
   --dark-gray: #6c757dff;
   --paper-bg: rgb(67, 69, 71);
+  --dark-paper-bg: rgb(65, 65, 65);
   --extra-dark-gray: #343a40ff;
   --paragraph-color: rgba(0, 0, 0, 0.54);
   --paragraph-spacing: 0.00938em;
@@ -39,6 +40,7 @@
 body {
   background-color: var(--extra-dark-gray);
   color: var(--soft-light-gray);
+
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -97,6 +99,7 @@ button {
   cursor: pointer;
   font-weight: 600;
   text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 
 .button-lg {
@@ -247,4 +250,23 @@ input {
   max-width: 367px;
   width: 100%;
   height: 48px;
+}
+
+.nav-link {
+  padding: 10px 18px;
+  border-radius: 100px;
+  transition: var(--transition);
+  color: var(--light-gray);
+  font-weight: 400;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.nav-link:hover {
+  background-color: var(--dark-paper-bg);
+}
+
+.active-link {
+  background-color: var(--paper-bg);
+  font-weight: 600;
 }
