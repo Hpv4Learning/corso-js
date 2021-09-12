@@ -1,12 +1,14 @@
-// Ripetitività difficile da mantenere
-console.log("Ciao");
-console.log("Ciao");
-console.log("Ciao");
-console.log("Ciao");
+// Come si inizializza una variabile
+let saluto;
+console.log(saluto);
 
-// let saluto = "Ciao";
-let saluto = "Buongiorno";
+//Come si varia una variabile
+saluto = "Ciao";
 console.log(saluto);
-console.log(saluto);
-console.log(saluto);
-console.log(saluto);
+
+//Assegnazione multipla
+let nome, cognome, saluto;
+nome = "Sandro";
+cognome = "Petruzzi";
+saluto = "Ciao sono Sandro";
+console.log(nome, cognome, saluto);
