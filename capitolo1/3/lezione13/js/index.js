@@ -22,3 +22,9 @@ const persone = 4;
 const fetteRimanenti = fettePizza % persone;
 
 console.log(fetteRimanenti);
+
+const espressione1 = 16 + 7 + 12 * 10;
+const espressione2 = (16 + 7 + 12) * 10;
+
+console.log(espressione1);
+console.log(espressione2);
