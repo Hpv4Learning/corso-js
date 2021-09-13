@@ -16,3 +16,9 @@ numero += 10;
 // numero--;
 
 console.log(numero);
+
+const fettePizza = 10;
+const persone = 4;
+const fetteRimanenti = fettePizza % persone;
+
+console.log(fetteRimanenti);
