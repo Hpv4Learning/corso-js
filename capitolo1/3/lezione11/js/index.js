@@ -1,5 +1,4 @@
 // Concatenazione di stringhe
-//
 
 // const nome = "Enzo";
 // const cognome = "Goduria";
