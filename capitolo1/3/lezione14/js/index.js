@@ -25,7 +25,7 @@ const numero = 22;
 document.querySelector("form").addEventListener("submit", function (e) {
   e.preventDefault();
   let input = document.getElementById("input").value;
-  input = parseInt(input);
+  // input = parseInt(input);
   console.log(input);
   console.log(numero + input);
 });
