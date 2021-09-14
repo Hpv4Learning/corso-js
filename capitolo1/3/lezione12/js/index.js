@@ -18,5 +18,3 @@ console.log(addizione);
 console.log(sottrazione);
 console.log(moltiplicazione);
 console.log(divisione);
-
-ooooooooooooooooooooooooooooooooooooooooooooooo;
