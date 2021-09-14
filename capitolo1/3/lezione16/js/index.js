@@ -15,8 +15,8 @@
 let amici = ["Mario", "Luigi", "Giacomo", "Jacopo", "Sara"];
 console.log(amici);
 
-let miglioreAmico = amici[2]; // accedo al valore con indice 2 dell'array amici
+let miglioreAmico = amici[2]; // accedo al valore con indice 2
 console.log(miglioreAmico);
 
-amici[3] = "Andrea";
+amici[3] = "Andrea"; // modifico il valore con indice 3
 console.log(amici[3]);
