@@ -16,5 +16,17 @@ const persona = {
   }, // proprietà
   visualizzaNomeCompleto() {
     console.log(this.nome + " " + this.cognome);
-  },
+  }, // metodo
 };
+
+const figli = persona.figli;
+console.log(figli);
+
+console.log(persona.nome);
+persona.nome = "Ermenegildo";
+console.log(persona.nome);
+
+persona.proprietaAggiuntiva = false;
+console.log(persona);
+
+persona.visualizzaNomeCompleto();
