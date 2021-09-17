@@ -14,4 +14,7 @@ const persona = {
     cap: 10100,
     citta: "Napoli",
   }, // proprietà
+  visualizzaNomeCompleto() {
+    console.log(this.nome + " " + this.cognome);
+  },
 };
