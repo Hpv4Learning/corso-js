@@ -1,26 +1,23 @@
-//Conditional Statements
-// >, >=, <, <=, ==, ===, !=, !==
+// Uguaglianza
+// == vs ===
+const esempio1 = 20 == "20";
+const esempio2 = 20 === "20";
 
-//Sempre eseguito - Tra le parentesi deve esserci true o false
-if (true) {
-  console.log("Ciao sono un conditional Statements");
-}
+console.log(esempio1, esempio2);
 
-//Else
-if (3 > 1) {
-  console.log("Vero");
-} else {
-  console.log("Falso");
-}
+// != vs !==
+const esempio3 = 20 != "20";
+const esempio4 = 20 !== "20";
 
-//Posso usare un Variabile
-const isGreater = 3 >= 5;
+console.log(esempio3, esempio4);
 
-//Questo ritorna un valore, non fa si che venga valutata questa condizione nello statement
-//Attenzione, qui non stiamo dicendo "se è false allora fai questo". In caso che vnega ritornato
-//True eseguiremo il primo codice altrimenti il secondo. MOLTO IMPORTANTE
-if (isGreater) {
-  console.log("Vero");
-} else {
-  console.log("Falso");
-}
+//Esempio pratico
+const pratico = null == undefined;
+const pratico2 = null === undefined;
+
+console.log(pratico, pratico2);
+
+/**
+ * CONSIGLIO AVANZATO
+ * Controllare che un valore non sia == null equivale a controllare che esso non sia anche undefined
+ */

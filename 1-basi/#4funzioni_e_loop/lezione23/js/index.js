@@ -1,29 +1,28 @@
-// Le funzioni accettano dei parametri
-// E' possibile assengare nomi dei parametri con le stesse regole delle variabili
-// I parametri sono trattati all'interno delle funzioni come valori locali
-function aggiungiValore(numero) {
-  numero++;
-  numero++;
-  numero++;
-  numero++;
-  numero++;
-  console.log(numero);
+//Far Vedere Esempio di Hoisting
+funzione("comportamento inaspettato");
+
+//Costrutto di funzione Visto fino ad ora
+function funzione(parametro) {
+  //...Fai cose
+  console.log(`sono una funzione e questo è un ${parametro}`);
+  return;
 }
-aggiungiValore(5);
+funzione("super corso");
 
-//Essendo parametri locali non possiamo accedervi dall'estrno di un funzione
-// console.log(numero);
+espressione();
+// Espressioni
+const espressione = function () {
+  console.log("sono un espressione");
+};
 
-//Possiamo però assegnare un valore di default ai nostri parametri
-//Così da non ottenere mai un errore perché causare un errore
-//Bloccherà esecuzione del codice
-function sottraiValore(numero = 40) {
-  numero--;
-  numero--;
-  numero--;
-  numero--;
-  numero--;
-  console.log(numero);
-}
+espressione();
 
-sottraiValore();
+// Arrow (Discorso a parte)
+const arrow = () => {
+  console.log("Ciao");
+};
+
+//Implicit Return
+const implicitReturn = () => "ciao";
+
+const prova = implicitReturn();

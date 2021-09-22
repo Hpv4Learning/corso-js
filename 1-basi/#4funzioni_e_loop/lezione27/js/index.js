@@ -1,32 +1,33 @@
-const isGreater = 3 >= 5;
-//Questo ritorna un valore, non fa si che venga valutata questa condizione nello statement
-//Attenzione, qui non stiamo dicendo "se è false allora fai questo". In caso che vnega ritornato
-//True eseguiremo il primo codice altrimenti il secondo. MOLTO IMPORTANTE
-if (isGreater) {
-  console.log("Vero");
-} else {
-  console.log("Falso");
-}
+// Operatori logici (&& and) - (|| or)
 
-function isGreaterThen10(params) {
-  if (typeof params === "number") {
-    return params > 10;
-  } else {
-    return false;
-  }
-}
+const nome = "Enzo";
+const age = 40;
 
-//Possiamo usare anche una funzione
-// if (isGreaterThen10(20) ) {
-//   console.log("E' maggiore di 10");
+// if (age > 18 || nome === 'Enzo') {
+//   console.log("Ammesso");
 // } else {
-//   console.log("Non è maggiore di 10");
+//   console.log("Non ammesso");
 // }
 
-if (isGreaterThen10(9)) {
-  console.log("9 maggiore di 10");
-} else if (isGreaterThen10(5)) {
-  console.log("50 è maggiore di 10");
+if (age > 18 && nome === "Enzo") {
+  console.log("Ammesso");
 } else {
-  console.log("Nessun Valore Maggiore di 10 trovato");
+  console.log("Non ammesso");
+}
+
+const isMaggiorenne = function (age) {
+  console.log("isMaggiorenne");
+  return age >= 18;
+};
+
+const isProprietario = function (name) {
+  console.log("isProprieetario");
+  return name === "Enzo";
+};
+
+//Ordine di esecuzione
+if (isMaggiorenne(age) || isProprietario("Enzo")) {
+  console.log("Ammesso");
+} else {
+  console.log("Non ammesso");
 }

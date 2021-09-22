@@ -1,33 +1,25 @@
-// Operatori logici (&& and) - (|| or)
+//Ciclo While (Fino a quando)
+//Ciclo iteretivo
+let contatore = 0;
+let valore = 0;
 
-const nome = "Enzo";
-const age = 40;
-
-// if (age > 18 || nome === 'Enzo') {
-//   console.log("Ammesso");
-// } else {
-//   console.log("Non ammesso");
+//Se non si aumenta contatore abbiamo un loop infinito
+// while (contatore < 10) {
+//   valore++;
 // }
 
-if (age > 18 && nome === "Enzo") {
-  console.log("Ammesso");
-} else {
-  console.log("Non ammesso");
+while (contatore < 10) {
+  valore++;
+  contatore++;
 }
 
-const isMaggiorenne = function (age) {
-  console.log("isMaggiorenne");
-  return age >= 18;
-};
+let contatore2 = 10;
+let valore2 = 0;
 
-const isProprietario = function (name) {
-  console.log("isProprieetario");
-  return name === "Enzo";
-};
+do {
+  valore2++;
+  contatore2++;
+} while (contatore2 < 10);
 
-//Ordine di esecuzione
-if (isMaggiorenne(age) || isProprietario("Enzo")) {
-  console.log("Ammesso");
-} else {
-  console.log("Non ammesso");
-}
+console.log(valore);
+console.log(valore2);

@@ -1,45 +1,26 @@
-// Ritornare un valore da una funzione
-// function aggiungiValore(numero) {
-//   numero++;
-//   numero++;
-//   numero++;
-//   numero++;
-//   numero++;
-// }
+//Conditional Statements
+// >, >=, <, <=, ==, ===, !=, !==
 
-//Una funzione di defualt non ritorna undefined
-// const numero = aggiungiValore(5);
-// console.log(numero);
-
-//Aggiungendo return ritorneremo un valore
-function aggiungiValore(numero) {
-  numero++;
-  numero++;
-  numero++;
-  numero++;
-  numero++;
-  return numero;
+//Sempre eseguito - Tra le parentesi deve esserci true o false
+if (true) {
+  console.log("Ciao sono un conditional Statements");
 }
 
-const risultato = aggiungiValore(5);
-console.log(risultato);
-
-//Funzioni per convenzione devono svolgere un compito solo
-//Convertitore mph in m/s
-function convertMphToKmh(value) {
-  return value * 1.60934;
+//Else
+if (3 > 1) {
+  console.log("Vero");
+} else {
+  console.log("Falso");
 }
 
-function convertKmhToMs(value) {
-  return value / 3.6;
-}
+//Posso usare un Variabile
+const isGreater = 3 >= 5;
 
-function convertMphToMs(value) {
-  let risultato;
-  risultato = convertMphToKmh(value);
-  risultato = convertKmhToMs(risultato);
-  return `${risultato}m/s;`;
+//Questo ritorna un valore, non fa si che venga valutata questa condizione nello statement
+//Attenzione, qui non stiamo dicendo "se è false allora fai questo". In caso che vnega ritornato
+//True eseguiremo il primo codice altrimenti il secondo. MOLTO IMPORTANTE
+if (isGreater) {
+  console.log("Vero");
+} else {
+  console.log("Falso");
 }
-
-const prova = convertMphToMs(500);
-console.log(prova);
