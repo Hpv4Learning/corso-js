@@ -158,6 +158,12 @@ button:hover {
   }
 }
 
+.component-label {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-variant: small-caps;
+}
+
 /*
 SOCIAL STYLE
 */
@@ -210,6 +216,10 @@ SOCIAL STYLE
   align-items: center;
 }
 
+.align-end {
+  align-items: flex-end;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -233,6 +243,30 @@ SOCIAL STYLE
   width: 100%;
 }
 
+.gap-xs {
+  gap: 6px;
+}
+
+.gap-sm {
+  gap: 12px;
+}
+
+.gap-md {
+  gap: 24px;
+}
+
+.gap-lg {
+  gap: 48px;
+}
+
+.gap-xl {
+  gap: 96px;
+}
+
+.gap-xxl {
+  gap: 190px;
+}
+
 .logo {
   width: 56px;
   height: 56px;
@@ -250,6 +284,27 @@ input {
   max-width: 367px;
   width: 100%;
   height: 48px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  width: fit-content;
+  gap: 20px;
+  padding: 30px;
+}
+
+.form input {
+  background-color: var(--extra-dark-gray);
+}
+
+.form button {
+  align-self: flex-end;
+}
+
+.inline-form {
+  flex-direction: row;
 }
 
 .nav-link {
