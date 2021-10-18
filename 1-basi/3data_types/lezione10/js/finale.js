@@ -1,11 +1,6 @@
-// "" o ''
-
 const nome = "Enzo";
-// const nome = 'Enzo';
-// const nome = "Enzo';
+const nome2 = "Enzino";
 
-// const fraseConApostrofo = 'qual'è il tuo cognome?';
-const fraseConApostrofo = "qual'è il tuo cognome?";
+const fraseConApostrofo = "Sono caduto dall'albero";
 
-console.log(nome);
 console.log(fraseConApostrofo);

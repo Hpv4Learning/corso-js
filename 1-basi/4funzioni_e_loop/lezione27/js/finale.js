@@ -1,33 +1,26 @@
-// Operatori logici (&& and) - (|| or)
+// Operatori Logici ( && ) e ( || )
 
-const nome = "Enzo";
-const age = 40;
-
-// if (age > 18 || nome === 'Enzo') {
-//   console.log("Ammesso");
+// if (age >= 18 && nome === "Gianni") {
+//   console.log("Birra");
 // } else {
-//   console.log("Non ammesso");
+//   console.log("Succo");
 // }
 
-if (age > 18 && nome === "Enzo") {
-  console.log("Ammesso");
-} else {
-  console.log("Non ammesso");
-}
-
 const isMaggiorenne = function (age) {
-  console.log("isMaggiorenne");
+  console.log("Controllo età");
   return age >= 18;
 };
 
-const isProprietario = function (name) {
-  console.log("isProprieetario");
-  return name === "Enzo";
+const isProprietario = (nome) => {
+  console.log("Controllo Nome");
+  return nome === "Enzo";
 };
 
-//Ordine di esecuzione
-if (isMaggiorenne(age) || isProprietario("Enzo")) {
-  console.log("Ammesso");
+const nome = "Gianni";
+const age = 19;
+
+if (isMaggiorenne(age) || isProprietario(nome)) {
+  console.log("Birra");
 } else {
-  console.log("Non ammesso");
+  console.log("Succo");
 }

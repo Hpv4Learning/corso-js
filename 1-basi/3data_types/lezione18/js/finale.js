@@ -1,32 +1,30 @@
-// Oggetti
-// Collezione di proprietà e metodi
-// Dot notation
-
 const persona = {
   nome: "Enzo",
   cognome: "Goduria",
-  eta: 33,
-  sposato: true,
-  figli: ["Luca", "Paolo"],
-  indirizzo: {
-    via: "Via Roma",
-    civico: 1,
-    cap: 10100,
-    citta: "Napoli",
-  }, // proprietà
-  visualizzaNomeCompleto() {
-    console.log(this.nome + " " + this.cognome);
-  }, // metodo
+  age: 33,
+  "si sposa": false,
+  isRetired(age) {
+    return age > 60;
+  },
 };
 
-const figli = persona.figli;
-console.log(figli);
-
-console.log(persona.nome);
-persona.nome = "Ermenegildo";
-console.log(persona.nome);
-
-persona.proprietaAggiuntiva = false;
 console.log(persona);
 
-persona.visualizzaNomeCompleto();
+const figli = [
+  {
+    nome: "Maurizio",
+    age: 4,
+  },
+  {
+    nome: "Anna",
+    age: 7,
+  },
+];
+
+persona.figli = figli;
+
+console.log(persona.isRetired(persona.age));
+
+delete persona.figli;
+
+console.log(persona);

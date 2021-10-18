@@ -1,15 +1,14 @@
-// Concatenazione di stringhe
-// Template literal string ` ` + ${ }
-// Utilizzo carattere di escape \' , \"" , \\ , \n
-
 const nome = "Enzo";
 const cognome = "Goduria";
-const nome2 = "Gildo";
-// let nomeCompleto;
-// nomeCompleto = nome + " " + cognome + ".";
 
-// console.log("Ciao, il tuo nome completo è: " + nome + " " + cognome + ".");
-// console.log("Ciao, il tuo nome completo è: " + nomeCompleto);
+const nomeCompleto = nome + " " + cognome;
 
-console.log(`Ciao ${nome} ${cognome},\n benvenuto! `);
-console.log('"' + nome2 + " sale sull'albero!\" ");
+console.log("Ciao, il tuo nome completo è:" + " " + nomeCompleto + ".");
+
+const templateLiteral = `Ciao, il tuo nome completo è: ${nome} ${cognome}.`;
+
+const esempio = 'Ciao sono "sull" \n albero';
+
+console.log(templateLiteral);
+
+console.log(esempio);

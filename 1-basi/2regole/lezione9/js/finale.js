@@ -1,12 +1,13 @@
-// constanti e variabilo
 const nome = "Dario";
 // nome = "ugo";
 
-let persona = "Ivan";
-let persona2 = nome;
-persona2 = "Gianni";
+let persona = nome;
+persona = "Gianni";
 
-console.log(nome, persona, persona2);
+const array = [1, 2, 3];
+array[2] = "banana";
 
-// Spiegazione var + ES6
+console.log(nome, persona, array);
+
+//ES6 2015
 var esempio = "esempio";

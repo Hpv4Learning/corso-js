@@ -1,28 +1,19 @@
-//Far Vedere Esempio di Hoisting
-funzione("comportamento inaspettato");
-
-//Costrutto di funzione Visto fino ad ora
-function funzione(parametro) {
-  //...Fai cose
-  console.log(`sono una funzione e questo è un ${parametro}`);
-  return;
-}
+funzione("comportamento strano");
 funzione("super corso");
+esperessione();
 
-espressione();
-// Espressioni
-const espressione = function () {
+const esperessione = function () {
   console.log("sono un espressione");
 };
 
-espressione();
-
-// Arrow (Discorso a parte)
-const arrow = () => {
-  console.log("Ciao");
+const arrow = (parametro, param2) => {
+  console.log("sono un arrow");
 };
 
-//Implicit Return
-const implicitReturn = () => "ciao";
+const implicitArrow = (a, b) => a + b;
 
-const prova = implicitReturn();
+function funzione(parametro) {
+  //.... Fare Cose
+  console.log(`Sono una funzione e questo è un ${parametro}`);
+  return;
+}

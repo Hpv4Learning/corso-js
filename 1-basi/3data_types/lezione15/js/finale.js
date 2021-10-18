@@ -1,25 +1,17 @@
 // Data types
-// Primitivi --> String, Number, Boolean, Undefined, Null, Symbol
-// Object --> Array, Set, Objects, Map, Functions
+// Primitivi --> string, number, boolean, undefined, null, symbol
+// Object --> array, set, object, map, functions
 
-// Operatore typeof --> (typeof nomeVariabile) oppure (typeof valore)
-
-// String
-const stringa = "Hello world!";
-// Number
+const parola = "Ciao";
 const numero = 777;
-// Boolean
 const bool1 = true;
 const bool2 = false;
-// Undefined
 let prova;
-// Null
 const valore = null;
-// Symbol
 
-console.log(typeof stringa);
+console.log(typeof parola);
 console.log(typeof numero);
 console.log(typeof bool1);
 console.log(typeof bool2);
 console.log(typeof prova);
-console.log(typeof valore);
+console.log(typeof null);

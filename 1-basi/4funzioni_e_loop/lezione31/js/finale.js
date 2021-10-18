@@ -1,5 +1,3 @@
-// Oggetto che contiene tutte le tipologie di dato
-// Per descrivere un entità complessa
 const persona = {
   nome: "Omar",
   age: 26,
@@ -7,11 +5,11 @@ const persona = {
   sposato: false,
   lavoro: {
     posizione: "Frontend Developer",
-    azienda: "Young Platfrom",
+    azienda: "Young Platform",
     colleghi: [
       {
         nome: "Mattia",
-        posizone: "App Dev",
+        posizione: "App Developer",
       },
       {
         nome: "Andrea",
@@ -20,8 +18,8 @@ const persona = {
     ],
   },
   isRetired(age) {
-    return 60 - age === 40;
+    return 60 - age <= 20;
   },
 };
 
-console.log(persona.isRetired(persona.age));
+console.log(persona.isRetired(41));

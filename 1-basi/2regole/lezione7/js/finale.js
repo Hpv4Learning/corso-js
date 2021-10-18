@@ -1,14 +1,14 @@
-// Come si inizializza una variabile
-let saluto;
-console.log(saluto);
+// let saluto;
 
-//Come si varia una variabile
-saluto = "Ciao";
-console.log(saluto);
+// console.log(saluto);
 
-//Assegnazione multipla
+// saluto = "Ciao sono Davide";
+
+// console.log(saluto);
+
 let nome, cognome, saluto;
 nome = "Sandro";
 cognome = "Petruzzi";
-saluto = "Ciao sono Sandro";
+saluto = "Ciao Sono Sandro";
+
 console.log(nome, cognome, saluto);
