@@ -1,33 +1,22 @@
-// Ritornare un valore da una funzione
-// function aggiungiValore(numero) {
-//   numero++;
-//   numero++;
-//   numero++;
-//   numero++;
-//   numero++;
+// function somma(a, b) {
+//   return a + b;
 // }
 
-//Una funzione di defualt non ritorna undefined
-// const numero = aggiungiValore(5);
-// console.log(numero);
+// // console.log(somma(5, 5));
+// let risultato = somma(5, 9);
+// console.log(risultato);
 
-//Aggiungendo return ritorneremo un valore
-function aggiungiValore(numero) {
-  numero++;
-  numero++;
-  numero++;
-  numero++;
-  numero++;
-  return numero;
-}
+// function convertMphToMs(value) {
+//   let risultato = (value * 1.609) / 3.6;
+//   return risultato;
+// }
 
-const risultato = aggiungiValore(5);
-console.log(risultato);
+// let convertResult = convertMphToMs(500);
 
-//Funzioni per convenzione devono svolgere un compito solo
-//Convertitore mph in m/s
+// console.log(convertResult);
+
 function convertMphToKmh(value) {
-  return value * 1.60934;
+  return value * 1.609;
 }
 
 function convertKmhToMs(value) {
@@ -38,8 +27,8 @@ function convertMphToMs(value) {
   let risultato;
   risultato = convertMphToKmh(value);
   risultato = convertKmhToMs(risultato);
-  return `${risultato}m/s;`;
+  return `${risultato}m/s`;
 }
 
-const prova = convertMphToMs(500);
-console.log(prova);
+const conversione = convertMphToMs(500);
+console.log(conversione);

@@ -1,48 +1,39 @@
-//Switch Statements
-// Esempio del dato
-
-const fruit = "Pere";
+const fruit = "Banana";
 
 switch (fruit) {
   case "Arancia":
     console.log("Le Arance costano 0.50€ al Kg");
     break;
-  case "Mela":
-    console.log("Le Mele costano 0.29€ al Kg");
+  case "Pera":
+    console.log("Le Pere costano 0.29€ al Kg");
     break;
-  case "Pere":
-    console.log("Le Pere costano 0.70€ al Kg");
-  // break;
   case "Cocco":
   case "Banana":
-    console.log("Esaurito");
+    console.log("Esauriti, spiacente");
     break;
   default:
-    console.log("Il negozio non venede questi prodotti");
+    console.log("Il negozio non è fornito di questo protto");
     break;
 }
 
-//Operazioni Concatenate
-const esempio = 0;
+const valore = 0;
 let risposta = "";
-switch (esempio) {
+switch (valore) {
   case 0:
     risposta += "Quindi ";
   case 1:
-    risposta += "Qual ";
-    risposta += "è ";
+    risposta += "Qual è ";
   case 2:
     risposta += "il tuo ";
   case 3:
-    risposta += "Nome";
+    risposta += "Nome ";
   case 4:
     risposta += "?";
-    console.log(risposta);
-    break;
   case 5:
     risposta += "!";
     console.log(risposta);
     break;
   default:
-    console.log("Please pick a number from 0 to 5!");
+    console.log("Scegli un valore tra 0 e 5!");
+    break;
 }

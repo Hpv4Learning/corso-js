@@ -7,13 +7,13 @@
  */
 
 let nome = "Enzo";
-let $cognome = "Goduria";
-// let 12eta = 12
-// let var = 12
+let $cognome34 = "Goduria";
+
 let nomeCompleto = "Enzo Goduria";
-// alternativa
 let nome_completo = "Enzo Goduria";
-//Nomi devono essere descrittivi
+
 let healthyCategoryFoodName = "Vegetarian";
-// Non Cose del genere
+
+let category = "";
+
 let x = "";
