@@ -25,4 +25,3 @@ const giorni = [
   "Venderdì",
   "Sabato",
 ];
-

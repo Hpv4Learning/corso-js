@@ -37,3 +37,4 @@ let numero = date.getDate();
 let anno = date.getFullYear();
 
 console.log(`Oggi è ${giorno} ${numero} ${mese}, ${anno}`);
+
