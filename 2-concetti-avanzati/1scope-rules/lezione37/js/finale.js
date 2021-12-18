@@ -5,16 +5,25 @@ let nome = "Mario";
 
 //Rischio di errore
 function esempio() {
-  // let nome = 'Michele'
+  // let nome = "Michele";
+  console.trace("1");
 
-  console.trace("esempio");
   function inner() {
     let nome = "Gregorio";
-    console.trace("Inner");
+    // console.log(nome);
+    console.trace("3");
+    function gianni() {
+      console.trace("4");
+    }
+
+    gianni();
   }
 
   inner();
-  console.trace("esempio");
+  console.trace("5");
 }
 
+console.trace("0");
+
 esempio();
+console.trace("2");
