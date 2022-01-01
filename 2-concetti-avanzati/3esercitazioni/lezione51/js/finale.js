@@ -2,20 +2,20 @@
 const letters =
   "QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890";
 
-const array = [];
+let array = [];
 
 for (let index = 0; index < letters.length; index++) {
   const element = letters.charAt(index);
   array.push(element);
 }
 
-const generatePassword = function (lungezza) {
-  if (lungezza < 8) {
-    alert("Password troppo poco sicura");
+const generatePassword = function (lunghezza) {
+  if (lunghezza < 8) {
+    alert("password non sicura");
     return;
   }
   let randomString = "";
-  for (let i = 0; i <= lungezza; i++) {
+  for (let i = 0; i < lunghezza; i++) {
     let randomChar = Math.floor(Math.random() * array.length);
     randomString += array[randomChar];
   }
@@ -23,6 +23,5 @@ const generatePassword = function (lungezza) {
   return randomString;
 };
 
-const randomPassword = generatePassword(24);
-
+const randomPassword = generatePassword(7);
 console.log(randomPassword);
