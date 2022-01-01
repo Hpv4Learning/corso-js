@@ -39,3 +39,4 @@ console.log(`oggi è ${giorno} ${numero} ${mese}, ${anno}`);
 // console.log(data.getFullYear())
 
 // console.log(mesi[data.getMonth()])
+
