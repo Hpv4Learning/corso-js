@@ -12,24 +12,32 @@
  * Funzioni che vengono passate come parametro ad un'altra funzione per essere richiamate all'interno
  */
 
-function validator(a, b) {
+function validetor(a, b) {
   return typeof a === "number" && typeof b === "number";
+}
+
+function minore50(a, b) {
+  return a + b < 50;
 }
 
 function absoluteValue(number) {
   if (number < 0) {
     return Math.abs(number);
   }
+
   return number;
 }
 
-function sottrazione(a, b, validator, absoluter) {
-  const areNumbers = validator(a, b);
+function sottrazione(a, b, callback1, callback2) {
+  const areNumbers = callback1(a, b);
   if (areNumbers) {
-    return absoluter(a - b);
+    return callback2(a - b);
   }
-  return "Non sono numeri";
+
+  return "Validazione non superata";
 }
 
-let risultato = sottrazione(5, 6, validator, absoluteValue);
+let risultato = sottrazione(5, 6, validetor, absoluteValue);
+risultato = sottrazione(25, 50, minore50, absoluteValue);
+
 console.log(risultato);

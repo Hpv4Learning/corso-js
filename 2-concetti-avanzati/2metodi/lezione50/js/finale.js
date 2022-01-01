@@ -26,15 +26,17 @@ const giorni = [
   "Sabato",
 ];
 
-// const date = new Date();
-const date = new Date("07/21/2001");
+const data = new Date(Date.now());
+console.log(data);
+let mese = mesi[data.getMonth()];
+let giorno = giorni[data.getDay()];
+let numero = data.getDate();
+let anno = data.getFullYear();
 
-// console.log(date.getMonth());
-let mese = mesi[date.getMonth()];
-// console.log(date.getDay());
-let giorno = giorni[date.getDay()];
-let numero = date.getDate();
-let anno = date.getFullYear();
+console.log(`oggi è ${giorno} ${numero} ${mese}, ${anno}`);
+// console.log(data.getDate())
+// console.log(data.getDay())
+// console.log(data.getFullYear())
 
-console.log(`Oggi è ${giorno} ${numero} ${mese}, ${anno}`);
+// console.log(mesi[data.getMonth()])
 

@@ -26,39 +26,34 @@ const people = [
   },
 ];
 
-//Ritorna solo il primo
 const youngerThan30 = people.find(function (item) {
-  if (item.age < 30) return item;
-});
-
-//Ritorna l'indice 0 -1
-const youngerThan30Index = people.findIndex(function (item) {
-  if (item.age < 20) return item;
-});
-
-//Non accetta una funzione e non permette ricerche su array di oggetti
-const indexOfYounger = people.indexOf({
-  name: "Sandro",
-  age: 20,
-  position: "Frontend Developer",
-});
-
-const ageArray = people.map((item) => item.age);
-// console.log(ageArray.indexOf(20));
-const agePosition = ageArray.indexOf(24);
-
-console.log("finalItem", people[agePosition]);
-
-//Attenzione al return di -1
-function customFindMethod() {
-  const ageArray = people.map((item) => item.age);
-  // console.log(ageArray.indexOf(20));
-  const agePosition = ageArray.indexOf(20);
-  if (agePosition > -1) {
-    console.log("NE ABBIAMO UNO NE ABBIAMO UNO");
+  if (item.age < 30) {
+    return item;
   }
-  console.log("NESSUN ELEMENTO TROVA FACCIAMO ALTRE COSE");
-}
+});
+
+const youngerThan30Index = people.findIndex(function (element) {
+  if (element.age < 30) {
+    return element;
+  }
+});
+
+console.log(youngerThan30, youngerThan30Index);
+
+// const indexOfYounger = people.indexOf({
+//   name: "Sandro",
+//   age: 20,
+//   position: "Frontend Developer",
+// });
+
+const customFindMethod = function () {
+  const ageArray = people.map((item) => item.age);
+  const ageIndex = ageArray.indexOf(488);
+  if (ageIndex > -1) {
+    console.log("Esiste un elemento e quindi faccio cose");
+    return;
+  }
+  console.log("non esiste e faccio altro");
+};
 
 customFindMethod();
-console.log(youngerThan30, youngerThan30Index, indexOfYounger);
