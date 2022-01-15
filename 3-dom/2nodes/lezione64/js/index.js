@@ -1,3 +1,3 @@
 // createElement('element')
-// createElement('text content')
-// createElement(childElement)
+// createTextNode('text content')
+// element.appendChild(childElement)
