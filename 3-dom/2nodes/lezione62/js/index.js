@@ -1,2 +1,2 @@
-//nodeValue
-//textContent
+// getAttribute()
+// setAttribute()
