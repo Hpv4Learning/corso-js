@@ -3,4 +3,4 @@
 // keydown - Tasto rimane premuto
 // keyup - Il tasto "torna su"
 
-const input = document.getElementById("#text");
+const input = document.getElementById("text");

@@ -7,13 +7,19 @@
 const btn = document.getElementById("btn");
 const heading = document.querySelector("h1");
 
-let printEvent = (text) => {
+let handleClick = function (text) {
   console.log(text || "click");
 };
 
-btn.addEventListener("click", () => printEvent());
-btn.addEventListener("mousedown", () => printEvent("down"));
-btn.addEventListener("mouseup", () => printEvent("up"));
+function printEvent(text) {
+  return function () {
+    console.log(text || "click");
+  };
+}
+
+btn.addEventListener("click", printEvent("click"));
+btn.addEventListener("mousedown", () => handleClick("down"));
+btn.addEventListener("mouseup", () => handleClick("up"));
 
 heading.addEventListener("mouseenter", function () {
   heading.classList.add("orange");

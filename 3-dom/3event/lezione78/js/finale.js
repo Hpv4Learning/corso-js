@@ -7,19 +7,20 @@ const list = document.querySelector("#list");
 const root = document.querySelector("#root");
 
 function showBubbling(e) {
-  console.log("CurrentTarget", e.currentTarget);
-  // console.log("Target", e.target);
+  console.log("currentTarget", e.currentTarget);
+  //   console.log("target", e.target);
+  //   console.log("evento");
   if (e.target.classList.contains("item")) {
-    // console.log("sono un item");
+    console.log("sono un item");
   }
 }
 
-function stopPropagation(e) {
+function stopProp(e) {
   console.log("stopped");
   e.stopPropagation();
 }
 
-list.addEventListener("click", showBubbling, { capture: true });
-root.addEventListener("click", showBubbling, { capture: true });
-document.addEventListener("click", showBubbling, { capture: true });
-window.addEventListener("click", showBubbling, { capture: true });
+window.addEventListener("click", showBubbling);
+root.addEventListener("click", showBubbling);
+document.addEventListener("click", showBubbling);
+list.addEventListener("click", stopProp);
