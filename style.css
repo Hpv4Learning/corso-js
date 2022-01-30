@@ -325,3 +325,11 @@ input {
   background-color: var(--paper-bg);
   font-weight: 600;
 }
+
+.text-center{
+  text-align: center;
+}
+
+.text-right{
+  text-align: right;
+}
