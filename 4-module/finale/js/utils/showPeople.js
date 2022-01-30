@@ -1,4 +1,7 @@
-import { element } from "./data.js";
+// import { element } from "./data.js";
+import { container } from "./data.js";
+
+// const { container } = element;
 
 function showPeople(data) {
   let jobsList = data.map(function (element) {
@@ -7,9 +10,9 @@ function showPeople(data) {
         </p>`;
   });
 
-  element.container.classList.add("paper");
+  container.classList.add("paper");
 
-  element.container.innerHTML = jobsList.join("");
+  container.innerHTML = jobsList.join("");
 }
 
 export default showPeople;

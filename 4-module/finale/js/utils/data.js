@@ -18,7 +18,9 @@ const data = [
 export const element = {
   btn: get(".button-md"),
   container: get("#jobs"),
-  prova: get("ciao"),
+  //   prova: get("ciao"),
 };
 
-export { data };
+const { btn, container } = element;
+
+export { data, btn, container };
