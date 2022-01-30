@@ -1,3 +1,5 @@
+import get from "./selectElement.js";
+
 const data = [
   {
     name: "Mario Cemento",
@@ -14,8 +16,9 @@ const data = [
 ];
 
 export const element = {
-  btn: document.querySelector(".button-md"),
-  container: document.querySelector("#jobs"),
+  btn: get(".button-md"),
+  container: get("#jobs"),
+  prova: get("ciao"),
 };
 
 export { data };
