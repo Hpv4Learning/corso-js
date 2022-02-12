@@ -39,13 +39,18 @@ const makeCipolle = function () {
 };
 
 const makeZuppa = async function () {
-  await boilWater();
-  await makeCarote();
-  await makeCipolle();
-  console.log("zuppa pronta");
+  try {
+    await boilWater();
+    await makeCarote();
+    await stopPromise();
+    await makeCipolle();
+    console.log("zuppa pronta");
+  } catch (error) {
+    console.log(error);
+  } finally {
+    console.log("finito tutto");
+  }
 };
-
-makeZuppa();
 
 // const promiseZuppa = function () {
 //   boilWater()
@@ -56,3 +61,5 @@ makeZuppa();
 //     .catch((err) => console.log(err))
 //     .finally(() => console.log("promise finita"));
 // };
+
+makeZuppa();

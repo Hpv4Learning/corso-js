@@ -37,29 +37,3 @@ const makeCipolle = function () {
     }, 2000);
   });
 };
-
-const makeZuppa = async function () {
-  try {
-    await boilWater();
-    await makeCarote();
-    await stopPromise();
-    await makeCipolle();
-    console.log("zuppa pronta");
-  } catch (error) {
-    console.log(error);
-  } finally {
-    console.log("finito tutto");
-  }
-};
-
-// const promiseZuppa = function () {
-//   boilWater()
-//     .then(makeCarote)
-//     // .then(stopPromise)
-//     .then(makeCipolle)
-//     .then(() => console.log("zuppa"))
-//     .catch((err) => console.log(err))
-//     .finally(() => console.log("promise finita"));
-// };
-
-makeZuppa();
