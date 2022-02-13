@@ -11,6 +11,7 @@
 const boilWater = function () {
   return new Promise((resolve, reject) => {
     setTimeout(function () {
+      console.log("acqua bollita");
       resolve();
     }, 5000);
   });
@@ -19,7 +20,8 @@ const boilWater = function () {
 const makeCarote = function () {
   return new Promise((resolve, reject) => {
     setTimeout(function () {
-      resolve();
+      console.log("carote");
+      resolve("prova");
     }, 2000);
   });
 };
@@ -33,6 +35,7 @@ const stopPromise = () => {
 const makeCipolle = function () {
   return new Promise((resolve, reject) => {
     setTimeout(function () {
+      console.log("cipolle pronte");
       resolve();
     }, 2000);
   });
@@ -44,22 +47,12 @@ const makeZuppa = async function () {
     await makeCarote();
     await stopPromise();
     await makeCipolle();
-    console.log("zuppa pronta");
+    // console.log(risultato);
   } catch (error) {
     console.log(error);
   } finally {
     console.log("finito tutto");
   }
 };
-
-// const promiseZuppa = function () {
-//   boilWater()
-//     .then(makeCarote)
-//     // .then(stopPromise)
-//     .then(makeCipolle)
-//     .then(() => console.log("zuppa"))
-//     .catch((err) => console.log(err))
-//     .finally(() => console.log("promise finita"));
-// };
 
 makeZuppa();

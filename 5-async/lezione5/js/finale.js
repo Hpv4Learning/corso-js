@@ -8,27 +8,6 @@
 //Promises - Pending, Resolved, Rejected
 // then & cacth methods
 
-const makeZuppa = function () {
-  console.log("bollendo acqua");
-  setTimeout(function () {
-    console.log("finito bollire acqua");
-    console.log("taglio carote");
-
-    setTimeout(() => {
-      console.log("finito di bollire carote");
-      console.log("taglio le cipolle");
-
-      setTimeout(function () {
-        console.log("zuppa pronta");
-      }, 2000);
-    }, 2000);
-  }, 5000);
-};
-
-makeZuppa();
-
-// const promise = new Promise((resolve, reject) => {});
-
 const promise = new Promise((resolve, reject) => {
   let value = "test";
   // let value;
@@ -39,45 +18,36 @@ const promise = new Promise((resolve, reject) => {
   }
 });
 
-// console.log(promise.value);
-// console.log(promise);
-
-// promise
-//   .then(function (result) {
-//     console.log(result);
-//   })
-//   .then(() => console.log("eccomi"))
-//   .catch((err) => {
-//     console.log(err);
-//   });
-
 const boilWater = function () {
   return new Promise((resolve, reject) => {
     setTimeout(function () {
+      console.log("acqua bollita");
       resolve();
-    }, 5000);
+    }, 1000);
   });
 };
 
 const makeCarote = function () {
   return new Promise((resolve, reject) => {
     setTimeout(function () {
+      console.log("carote pronte");
       resolve();
-    }, 2000);
+    }, 1000);
   });
 };
 
 const stopPromise = () => {
   return new Promise((_, reject) => {
-    reject("Errore");
+    reject("Mancata la corrente");
   });
 };
 
 const makeCipolle = function () {
   return new Promise((resolve, reject) => {
     setTimeout(function () {
+      console.log("zuppa pronta");
       resolve();
-    }, 2000);
+    }, 1000);
   });
 };
 
@@ -86,9 +56,36 @@ const promiseZuppa = function () {
     .then(makeCarote)
     // .then(stopPromise)
     .then(makeCipolle)
-    .then(() => console.log("zuppa"))
     .catch((err) => console.log(err))
-    .finally(() => console.log("promise finita"));
+    .finally(() => console.log("promise terminata"));
 };
 
+// const makeZuppa = function () {
+//   console.log("bollendo acqua");
+//   setTimeout(function () {
+//     console.log("finito bollire acqua");
+//     console.log("taglio carote");
+
+//     setTimeout(() => {
+//       console.log("finito di bollire carote");
+//       console.log("taglio le cipolle");
+
+//       setTimeout(function () {
+//         console.log("zuppa pronta");
+//       }, 2000);
+//     }, 2000);
+//   }, 5000);
+// };
+
 promiseZuppa();
+
+// // console.log(promise);
+// promise
+//   .then(function (result) {
+//     console.log(result);
+//     return "cioa";
+//   })
+//   .then((result) => {
+//     console.log(result);
+//   })
+//   .catch((err) => console.log(err));

@@ -15,27 +15,30 @@
 //   }, time);
 // };
 
-// boilWater(1000);
-// console.log("taglio carote");
-// boilWater(500);
-// console.log("taglio cipolle");
-// boilWater(500);
+// boilWater(5000);
+// console.log("taglio le carote");
+// boilWater(2000);
+// console.log("taglio le cipolle");
+// boilWater(2000);
 
 const makeZuppa = function () {
   console.log("bollendo acqua");
   setTimeout(function () {
-    console.log("finito bollire acqua");
-    console.log("taglio carote");
+    console.log("acqua bolle");
+    console.log("buttiamo le carote");
 
     setTimeout(() => {
-      console.log("finito di bollire carote");
-      console.log("taglio le cipolle");
+      console.log("carote sono pronte");
+      console.log("butto le cipolle");
 
       setTimeout(function () {
-        console.log("zuppa pronta");
+        console.log("zuppa è pronta");
       }, 2000);
     }, 2000);
+    console.log("taglio le cipolle");
   }, 5000);
+
+  console.log("tagliamo le carote");
 };
 
 makeZuppa();

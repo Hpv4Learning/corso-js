@@ -1,8 +1,8 @@
 // Javascript è un linguaggio Single Threaded e Syncrono
 
 // console.log("Apri il pacco");
-// console.log("bolli l'acqua");
-// console.log("scola la pasta");
+// console.log("Bolli Acqua");
+// console.log("Scola al pasta");
 
 function boiling() {
   for (let i = 0; i < 10000; i++) {
@@ -13,4 +13,6 @@ function boiling() {
 
 console.log("Apri il pacco");
 boiling();
-console.log("scola la pasta");
+console.log("fare soffritto");
+console.log("fare sugo");
+console.log("Scola al pasta");
