@@ -333,3 +333,15 @@ input {
 .text-right{
   text-align: right;
 }
+
+.li-item{
+  padding: 8px 0px;
+  border-bottom: 1px solid var(--paper-bg);
+}
+
+.error{
+  background-color: rgb(238, 62, 62);
+  color: white;
+  max-width: fit-content;
+  padding: 10px 24px;
+}
