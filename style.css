@@ -21,7 +21,7 @@
   --extra-dark-gray: #343a40ff;
   --paragraph-color: rgba(0, 0, 0, 0.54);
   --paragraph-spacing: 0.00938em;
-  --primary: #7026ba;
+  --primary: #8769FE;
   --secondary: #e7a7ff;
   --tertiary: #f3dffb;
   --optional: #6200ee;
@@ -56,6 +56,7 @@ code {
 ul {
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
   color: unset;
@@ -72,15 +73,19 @@ h3,
 h4 {
   letter-spacing: var(--letter-spacing);
 }
+
 h1 {
   font-size: 3rem;
 }
+
 h2 {
   font-size: 2rem;
 }
+
 h3 {
   font-size: 1.25rem;
 }
+
 h4 {
   font-size: 0.875rem;
 }
@@ -138,18 +143,23 @@ button:hover {
   h1 {
     font-size: 4rem;
   }
+
   h2 {
     font-size: 2.5rem;
   }
+
   h3 {
     font-size: 2rem;
   }
+
   h4 {
     font-size: 1.25rem;
   }
+
   body {
     font-size: 1rem;
   }
+
   h1,
   h2,
   h3,
@@ -186,6 +196,7 @@ SOCIAL STYLE
   left: 0px;
   right: 0px;
 }
+
 .container-xl {
   width: 100%;
 }
@@ -326,20 +337,20 @@ input {
   font-weight: 600;
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
 
-.text-right{
+.text-right {
   text-align: right;
 }
 
-.li-item{
+.li-item {
   padding: 8px 0px;
   border-bottom: 1px solid var(--paper-bg);
 }
 
-.error{
+.error {
   background-color: rgb(238, 62, 62);
   color: white;
   max-width: fit-content;
